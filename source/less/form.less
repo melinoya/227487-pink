@@ -169,10 +169,6 @@
     order: 1;
   }
 
-  .form__fieldset--contacts {
-    order: 3;
-  }
-
   .form__fieldset--achievements {
     order: 4;
   }
@@ -183,10 +179,6 @@
 
   .form__fieldset--feedback {
     order: 5;
-  }
-
-  .form__footer {
-    order: 6;
   }
 
   .form__legend {
@@ -217,19 +209,21 @@
   }
 
   .form__fieldset--contacts {
-      .form__field {
-        display: flex;
-        flex-direction: column;
-      }
+    order: 3;
 
-      .form__legend {
-        display: block;
-      }
+    .form__field {
+      display: flex;
+      flex-direction: column;
+    }
 
-      .form__label {
-        order: 2;
-        margin-right: auto;
-      }
+    .form__legend {
+      display: block;
+    }
+
+    .form__label {
+      order: 2;
+      margin-right: auto;
+    }
   }
 
   .form__textarea {
@@ -239,6 +233,7 @@
   .form__footer {
     display: flex;
     justify-content: space-between;
+    order: 6;
   }
 
   .form__button {
@@ -287,6 +282,7 @@
   }
 
   .form__fieldset--achievements {
+
     .form__list {
       display: flex;
       flex-direction: row;
