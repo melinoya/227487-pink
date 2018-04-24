@@ -11,19 +11,20 @@
     <header class="main-header main-header--nav-hidden">
 
       <a class="logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
+        <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
       </a>
 
       <button class="main-header__button main-header__button--open" type="button">Показать меню</button>
       <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button">Скрыть меню</button>
 
-      <nav class="main-nav main-nav--hidde">
+      <nav class="main-nav main-nav--display">
         <ul class="main-nav__list">
           <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
           <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
           <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
           <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a></li>
         </ul>
+
       </nav>
 
     </header>
@@ -32,32 +33,35 @@
 
       <h1 class="visually-hidden">Новое приложение для жизни PINK</h1>
 
-      <div class="page-name page-name--index">
-        <img class="page-name__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение для телефона" >
-      </div>
+      <section class="page-name page-name--index">
 
-      <section class="download-app">
-        <h2 class="visually-hidden">Скачать приложение</h2>
-        <a href="#" class="download-app__button button">Скачать приложение</a>
+        <img class="page-name__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение для телефона">
 
-        <ul class="download-app__list">
-          <li class="download-app__item">iOS</li>
-          <li class="download-app__item">Android</li>
-          <li class="download-app__item">Windows</li>
-        </ul>
+        <div class="download-app">
+          <h2 class="visually-hidden">Скачать приложение</h2>
 
-        <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section> <!-- download-app -->
+          <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
+          <a href="#" class="download-app__button button">Скачать приложение</a>
+
+          <ul class="download-app__list">
+            <li class="download-app__item">iOS</li>
+            <li class="download-app__item">Android</li>
+            <li class="download-app__item">Windows</li>
+          </ul>
+
+          <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div> <!-- download-app -->
+      </section>
+
+
 
       <section class="features">
 
-        <div class="wrapper wrapper--wide">
-          <h2 class="visually-hidden">Преимущества приложения</h2>
-          <p class="features__slogan slogan">Устали от серости мегаполиса?</p>
-          <p class="features__slogan slogan">Нам есть, что вам предложить!</p>
-        </div>
+        <h2 class="visually-hidden">Преимущества приложения</h2>
+        <p class="features__slogan slogan">Устали от серости мегаполиса?</p>
+        <p class="features__slogan slogan">Нам есть, что вам предложить!</p>
 
-        <div class="wrapper wrapper">
+        <div class="features__wrapper">
           <ul class="features__list">
             <li class="features__item">
               <b class="features__headline">Поднимает настроение</b>
@@ -78,24 +82,54 @@
 
       </section> <!-- features -->
 
+      <section class="effect">
+        <h2 class="visually-hidden">Эффект от использования приложения PINK</h2>
+
+        <div class="effect__img"></div>
+
+        <div class="effect__description">
+          <b class="effect__headline">Эффект на 24 часа!</b>
+          <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" class="effect__link">Узнать больше об исследовании</a>
+        </div>
+
+      </section> <!-- effect -->
+
       <section class="feedbacks slider">
 
         <h3 class="visually-hidden">Отзывы пользователей</h3>
 
+        <button class="slider__prev" type="button"><span class="visually-hidden">Предыдущий отзыв</span></button>
+        <button class="slider__next" type="button"><span class="visually-hidden">Следущий отзыв</span></button>
+
         <div class="feedback slider__slide slider__slide--current">
-          <b class="feedback__person">Николай Петров</b>
+          <div class="feedback__person">
+            <b class="feedback__name">Николай Петров</b>
+            <span class="feedback__bio">25 лет, водитель трамвая</span>
+          </div>
+
           <p class="feedback__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
 
         <div class="feedback slider__slide">
-          <b class="feedback__person">Николай Петров</b>
+          <div class="feedback__person">
+            <b class="feedback__name">Николай Петров</b>
+            <span class="feedback__bio">25 лет, водитель трамвая</span>
+          </div>
+
           <p class="feedback__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
 
         <div class="feedback slider__slide">
-          <b class="feedback__person">Николай Петров</b>
+          <div class="feedback__person">
+            <b class="feedback__name">Николай Петров</b>
+            <span class="feedback__bio">25 лет, водитель трамвая</span>
+          </div>
+
           <p class="feedback__review">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
         </div>
+
+
 
         <div class="slider__toggles">
           <button type="button" class="slider__toggle slider__toggle--current">1</button>
@@ -104,97 +138,123 @@
         </div>
 
 
+
+
       </section> <!-- feedback -->
 
       <section class="subscriptions slider">
         <h3 class="visually-hidden">Виды подписок</h3>
 
-        <div class="subscription slider__slide">
+        <div class="slider__wrapper">
 
-          <header class="subscription__header">
+          <div class="subscription subscription--big-table">
+            <header class="subscription__header subscription__header--big-table">
+              <b class="subscription__name">Что включено в план</b>
+            </header>
 
-            <b class="subscription__name">База</b>
-            <p class="subscription__price">1,99 USD</p>
-          </header>
+            <table class="subscription__contain">
+              <tr class="subscription__item">
+                <td class="subscription__description subscription__description--big-table">Розовый фильтр</td>
+              </tr>
 
-          <table class="subscription__contain">
+              <tr class="subscription__item">
+                <td class="subscription__description subscription__description--big-table">Смайлики</td>
+              </tr>
 
-            <tr class="subscription__item">
-              <td class="subscription__description">Розовый фильтр</td>
-              <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-            </tr>
+              <tr class="subscription__item">
+                <td class="subscription__description subscription__description--big-table">Комментарии</td>
+              </tr>
 
-            <tr class="subscription__item">
-              <td class="subscription__description">Смайлики</td>
-              <td class="subscription__term subscription__term--exclude"><span class="visually-hidden">Не включен</span></td>
-            </tr>
-
-            <tr class="subscription__item">
-              <td class="subscription__description">Комментарии</td>
-              <td class="subscription__term subscription__term--exclude"><span class="visually-hidden">Не включен</span></td>
-            </tr>
-
-          </table>
-
-        </div> <!-- first slide -->
-
-        <div class="subscription slider__slide slider__slide--current">
-
-          <header class="subscription__header">
-            <div class="subscription__bestseller">Хит</div>
-            <b class="subscription__name">Стандарт</b>
-            <p class="subscription__price">3,99 USD</p>
-          </header>
+            </table>
+          </div>
 
 
-          <table class="subscription__contain">
+          <div class="subscription slider__slide">
 
-            <tr class="subscription__item">
-              <td class="subscription__description">Розовый фильтр</td>
-              <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-            </tr>
+            <header class="subscription__header">
+              <b class="subscription__name">База</b>
+              <p class="subscription__price">1,99 USD</p>
+            </header>
 
-            <tr class="subscription__item">
-              <td class="subscription__description">Смайлики</td>
-              <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-            </tr>
+            <table class="subscription__contain">
 
-            <tr class="subscription__item">
-              <td class="subscription__description">Комментарии</td>
-              <td class="subscription__term subscription__term--exclude"><span class="visually-hidden">Не включен</span></td>
-            </tr>
+              <tr class="subscription__item">
+                <td class="subscription__description">Розовый фильтр</td>
+                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
+              </tr>
 
-          </table>
+              <tr class="subscription__item">
+                <td class="subscription__description">Смайлики</td>
+                <td class="subscription__term subscription__term--exclude"><span class="visually-hidden">Не включен</span></td>
+              </tr>
 
-        </div> <!-- second slide -->
+              <tr class="subscription__item">
+                <td class="subscription__description">Комментарии</td>
+                <td class="subscription__term subscription__term--exclude"><span class="visually-hidden">Не включен</span></td>
+              </tr>
 
-        <div class="subscription slider__slide">
+            </table>
 
-          <header class="subscription__header">
-            <b class="subscription__name">Анлим</b>
-            <p class="subscription__price">9,99 USD</p>
-          </header>
+          </div> <!-- first slide -->
+
+          <div class="subscription slider__slide slider__slide--current">
+
+            <header class="subscription__header">
+              <div class="subscription__bestseller">Хит</div>
+              <b class="subscription__name">Стандарт</b>
+              <p class="subscription__price">3,99 USD</p>
+            </header>
 
 
-          <table class="subscription__contain">
+            <table class="subscription__contain">
 
-            <tr class="subscription__item">
-              <td class="subscription__description">Розовый фильтр</td>
-              <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-            </tr>
+              <tr class="subscription__item">
+                <td class="subscription__description">Розовый фильтр</td>
+                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
+              </tr>
 
-            <tr class="subscription__item">
-              <td class="subscription__description">Смайлики</td>
-              <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-            </tr>
+              <tr class="subscription__item">
+                <td class="subscription__description">Смайлики</td>
+                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
+              </tr>
 
-            <tr class="subscription__item">
-              <td class="subscription__description">Комментарии</td>
-              <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-            </tr>
+              <tr class="subscription__item">
+                <td class="subscription__description">Комментарии</td>
+                <td class="subscription__term subscription__term--exclude"><span class="visually-hidden">Не включен</span></td>
+              </tr>
 
-          </table>
-        </div> <!-- third slide -->
+            </table>
+
+          </div> <!-- second slide -->
+
+          <div class="subscription slider__slide">
+
+            <header class="subscription__header">
+              <b class="subscription__name">Анлим</b>
+              <p class="subscription__price">9,99 USD</p>
+            </header>
+
+
+            <table class="subscription__contain">
+
+              <tr class="subscription__item">
+                <td class="subscription__description">Розовый фильтр</td>
+                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
+              </tr>
+
+              <tr class="subscription__item">
+                <td class="subscription__description">Смайлики</td>
+                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
+              </tr>
+
+              <tr class="subscription__item">
+                <td class="subscription__description">Комментарии</td>
+                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
+              </tr>
+
+            </table>
+          </div> <!-- third slide -->
+        </div>
 
         <div class="slider__toggles">
           <button type="button" class="slider__toggle">1</button>
@@ -207,9 +267,9 @@
       <section class="contacts">
         <h3 class="visually-hidden">Контакты для связи с нами</h3>
 
-        <div class="wrapper wrapper--wide">
+        <div class="contacts__wrapper">
 
-          <p class="contacts__slogan slogan">Остались вопросы? Свяжитесь с нами!</p>
+          <p class="contacts__slogan slogan">Остались вопросы? <br> Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <b class="contacts__way">Звоните:</b>

@@ -1,5 +1,9 @@
-.main-nav--hidden {
+.main-nav {
   display: none;
+}
+
+.main-nav--display {
+  display: block;
 }
 
 .main-nav__list {
@@ -33,4 +37,35 @@
   color: #ffffff;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet) {
+  .main-nav__item {
+    box-shadow: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-nav {
+    display: block;
+    margin-left: auto;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-nav__item {
+    background-color: transparent;
+    margin-left: 82px;
+
+    box-shadow: none;
+    border: none;
+  }
+
+  .main-nav__link {
+    text-transform: none;
+    line-height: normal;
+  }
 }
