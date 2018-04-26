@@ -2,6 +2,10 @@
   padding-top: 50px;
 }
 
+.gallery br {
+  display: none;
+}
+
 .gallery__wrapper {
   padding: 0 40px;
 }
@@ -24,16 +28,12 @@
   .gallery__content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 0 20px;
   }
 
-  .gallery__image--big {
-    width: 660px;
-    flex-shrink: 0;
-  }
-
   .gallery__wrapper {
-    padding: 0 110px;
+    padding: 0 50px;
   }
 
   .gallery__headline {
@@ -46,12 +46,16 @@
     padding-top: 0;
   }
 
+  .gallery br {
+    display: block;
+  }
+
   .gallery__wrapper {
-    padding: 100px 300px;
+    padding: 100px 10px;
   }
 
   .gallery__content {
-    padding: 0 130px;
+    padding: 0 10px;
     justify-content: space-between;
   }
 }

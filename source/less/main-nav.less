@@ -48,20 +48,25 @@
 @media (min-width: @desktop) {
   .main-nav {
     display: block;
-    margin-left: auto;
   }
 
   .main-nav__list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
   }
 
   .main-nav__item {
+    margin-right: 80px;
+
     background-color: transparent;
-    margin-left: 82px;
 
     box-shadow: none;
     border: none;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .main-nav__link {

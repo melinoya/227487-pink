@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css" >
   </head>
@@ -10,22 +11,25 @@
 
     <header class="main-header main-header--nav-hidden">
 
-      <a class="logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
-      </a>
+      <div class="main-header__container container">
 
-      <button class="main-header__button main-header__button--open" type="button">Показать меню</button>
-      <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button">Скрыть меню</button>
+        <a class="logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
+        </a>
 
-      <nav class="main-nav main-nav--display">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a></li>
-        </ul>
+        <button class="main-header__button main-header__button--open" type="button">Показать меню</button>
+        <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button">Скрыть меню</button>
 
-      </nav>
+        <nav class="main-nav main-nav--display">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a></li>
+          </ul>
+
+        </nav>
+      </div>
 
     </header>
 
@@ -56,28 +60,30 @@
 
 
       <section class="features">
+        <div class="features__wrapper features__wrapper--slogan">
+          <h2 class="visually-hidden">Преимущества приложения</h2>
+          <p class="features__slogan slogan">Устали от серости мегаполиса?</p>
+          <p class="features__slogan slogan">Нам есть, что вам предложить!</p>
+        </div>
 
-        <h2 class="visually-hidden">Преимущества приложения</h2>
-        <p class="features__slogan slogan">Устали от серости мегаполиса?</p>
-        <p class="features__slogan slogan">Нам есть, что вам предложить!</p>
-
-        <div class="features__wrapper">
+        <div class="features__wrapper container">
           <ul class="features__list">
             <li class="features__item">
+              <div class="features__image"></div>
               <b class="features__headline">Поднимает настроение</b>
               <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="features__item">
+              <div class="features__image"></div>
               <b class="features__headline">Меняет мир вокруг</b>
               <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="features__item">
+              <div class="features__image features__image--hello"></div>
               <b class="features__headline">Заводит новых друзей</b>
               <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
-
-          <img class="features__app-image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Пример на телефоне">
         </div>
 
       </section> <!-- features -->
@@ -85,12 +91,14 @@
       <section class="effect">
         <h2 class="visually-hidden">Эффект от использования приложения PINK</h2>
 
-        <div class="effect__img"></div>
+        <div class="effect__wrapper container">
+          <div class="effect__img"></div>
 
-        <div class="effect__description">
-          <b class="effect__headline">Эффект на 24 часа!</b>
-          <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-          <a href="#" class="effect__link">Узнать больше об исследовании</a>
+          <div class="effect__description">
+            <b class="effect__headline">Эффект на 24 часа!</b>
+            <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+            <a href="#" class="effect__link">Узнать больше об исследовании</a>
+          </div>
         </div>
 
       </section> <!-- effect -->
@@ -264,10 +272,8 @@
 
       </section> <!-- subscription -->
 
-      <section class="contacts">
+      <section class="contacts container">
         <h3 class="visually-hidden">Контакты для связи с нами</h3>
-
-        <div class="contacts__wrapper">
 
           <p class="contacts__slogan slogan">Остались вопросы? <br> Свяжитесь с нами!</p>
           <ul class="contacts__list">
@@ -284,8 +290,6 @@
               <p class="contacts__adds">ул. Большая Конюшенная, 19/8</p>
             </li>
           </ul>
-
-        </div>
 
         <div class="contacts__where">
           <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8" class="contacts__map" width="320" height="200">

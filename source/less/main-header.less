@@ -16,17 +16,23 @@
   display: none;
 }
 
+@media (min-width: @tablet) {
+  .main-header__container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
 @media (min-width: @desktop) {
   .main-header {
-    display: flex;
-    padding: 0 250px;
-    padding-top: 27px;
-    padding-bottom: 25px;
     margin-bottom: -110px;
   }
 
-  .main-header--inner {
-    padding: 40px 129px;
+  .main-header__container {
+    display: flex;
+    justify-content: space-between;
+    width: @desktop;
+    padding: 0 10px;
   }
 
   .main-header__button {

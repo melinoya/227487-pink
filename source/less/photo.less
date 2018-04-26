@@ -50,12 +50,7 @@
   .photo {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    margin-right: 20px;
-  }
-
-  .photo:nth-of-type(2n) {
-    margin-right: 0;
+    width: 48%;
   }
 
   .photo__img {
@@ -84,11 +79,16 @@
     width: 620px;
     margin: 0 auto;
   }
+
+  .photo__img--wide {
+    width: 660px;
+    margin: 0 -20px;
+  }
 }
 
 @media (min-width: @desktop) {
   .photo {
-    width: 300px;
+    width: 33%;
     margin: 0;
   }
 
@@ -101,6 +101,11 @@
     width: 940px;
     margin: 0 auto;
     min-height: 96px;
+  }
+
+  .photo__img--wide {
+    width: 960px;
+    margin: 0 -10px;
   }
 
   .photo__info {

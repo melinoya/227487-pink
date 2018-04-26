@@ -46,22 +46,23 @@
 
   .contacts__item {
     box-sizing: border-box;
-    width: 220px;
+    width: 35%;
   }
 
   .contacts__item:nth-of-type(2n) {
-    margin-left: 100px;
+    margin-left: 25%;
     margin-bottom: 40px;
   }
 }
 
 @media (min-width: @desktop) {
-  .contacts {
-    padding: 0 250px;
+  .contacts__list {
+    width: 100%;
+    justify-content: space-between;
   }
 
-  .contacts__list {
-    justify-content: space-between;
+  .contacts__item {
+    width: 30%;
   }
 
   .contacts__item:nth-of-type(2) {

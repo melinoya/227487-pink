@@ -2,30 +2,34 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="inner-page">
+  <body>
 
     <header class="main-header main-header--inner main-header--nav-hidden">
 
-      <a class="logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
-      </a>
+      <div class="main-header__container container">
 
-      <button class="main-header__button main-header__button--open" type="button">Показать меню</button>
-      <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button">Скрыть меню</button>
+        <a href="index.html" class="logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
+        </a>
 
-      <nav class="main-nav main-nav--display">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
-          <li class="main-nav__item"><a  class="main-nav__link">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a></li>
-        </ul>
-      </nav>
+        <button class="main-header__button main-header__button--open" type="button">Показать меню</button>
+        <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button">Скрыть меню</button>
 
+        <nav class="main-nav main-nav--display">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a></li>
+          </ul>
+
+        </nav>
+      </div>
     </header>
 
     <main class="page-form">
@@ -77,7 +81,7 @@
                 <li class="form__item">
                   <label class="checkbox">
                     <input type="checkbox" class="visually-hidden" checked>
-                    <span class="checkbox__indicator"></span>
+                    <span class="checkbox--indicator"></span>
                     Сделал селфи с акулой
                   </label>
                 </li>

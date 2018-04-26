@@ -2,61 +2,68 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
-  <body class="inner-page">
+  <body>
 
     <header class="main-header main-header--inner main-header--nav-hidden">
 
-      <a class="logo">
-        <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22">
-      </a>
+      <div class="main-header__container container">
 
-      <button class="main-header__button main-header__button--open" type="button">Показать меню</button>
-      <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button">Скрыть меню</button>
+        <a href="index.html" class="logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
+        </a>
 
-      <nav class="main-nav main-nav--display">
-        <ul class="main-nav__list">
-          <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
-          <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
-          <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
-          <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a></li>
-        </ul>
-      </nav>
+        <button class="main-header__button main-header__button--open" type="button">Показать меню</button>
+        <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button">Скрыть меню</button>
+
+        <nav class="main-nav main-nav--display">
+          <ul class="main-nav__list">
+            <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
+            <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>
+            <li class="main-nav__item"><a href="form.html" class="main-nav__link">Конкурс</a></li>
+            <li class="main-nav__item"><a href="https://htmlacademy.ru/intensive/adaptive" class="main-nav__link">HTML Academy</a></li>
+          </ul>
+
+        </nav>
+      </div>
 
     </header>
 
     <main class="page-photo">
 
       <section class="page-name">
-        <h1 class="page-name__headline">Фотографии пользователей</h1>
+        <h1 class="page-name__headline">Фотографии <br> пользователей</h1>
       </section>
 
       <section class="gallery">
 
         <div class="gallery__wrapper">
           <h2 class="visually-hidden">Галерея фотографий</h2>
-          <p class="gallery__headline">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <p class="gallery__headline">Взгляните на фотографии, которые выкладывают пользователи! <br> Видите, как не хватает ваших?</p>
         </div>
 
-        <article class="photo photo--big gallery__image">
-          <h3 class="visually-hidden">Панорама дня</h3>
-
-          <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="photo__img photo__img--wide" width="320" height="137">
-
-          <div class="photo__info">
-            <b class="photo__name">Анна</b>
-            <span class="photo__time">(5 минут назад)</span>
-            <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-            <a href="" class="photo__like">Нравится: 215</a>
-            <div class="photo__img-tag">Панорама дня</div>
-          </div>
-
-        </article>
-
         <div class="gallery__content">
+
+          <article class="photo photo--big gallery__image">
+            <h3 class="visually-hidden">Панорама дня</h3>
+
+            <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="photo__img photo__img--wide" width="320" height="137">
+
+            <div class="photo__info">
+              <b class="photo__name">Анна</b>
+              <span class="photo__time">(5 минут назад)</span>
+              <p class="photo__comment">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <a href="" class="photo__like">Нравится: 215</a>
+              <div class="photo__img-tag">Панорама дня</div>
+            </div>
+
+          </article>
+
+
 
           <div class="photo gallery__image">
             <img src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя" class="photo__img" width="280" height="180">
