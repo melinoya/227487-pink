@@ -3,7 +3,6 @@
 
   display: block;
   width: 100%;
-  padding: 0 20px;
   padding-top: 28px;
   padding-bottom: 32px;
 
@@ -12,7 +11,41 @@
   color: #ffffff;
 }
 
+.download-app__slogan {
+  display: none;
+}
+
 .download-app__description {
   line-height: 1.71;
   font-weight: 300;
+}
+
+@media (min-width: @tablet) {
+  .download-app {
+    width: 300px;
+    padding-bottom: 0;
+
+    font-size: 18px;
+    line-height: 1.33;
+
+    background-color: transparent;
+    text-align: center;
+  }
+
+  .download-app__slogan {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+
+    font-size: 40px;
+    font-weight: 300;
+    line-height: normal;
+
+    text-align: center;
+  }
+
+  .download-app__button {
+    margin-bottom: 50px;
+  }
 }

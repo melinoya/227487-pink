@@ -15,3 +15,27 @@
 .main-header__button--nav-hidden {
   display: none;
 }
+
+@media (min-width: @tablet) {
+  .main-header__container {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-header {
+    margin-bottom: -110px;
+  }
+
+  .main-header__container {
+    display: flex;
+    justify-content: space-between;
+    width: @desktop;
+    padding: 0 10px;
+  }
+
+  .main-header__button {
+    display: none;
+  }
+}

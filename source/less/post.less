@@ -3,6 +3,10 @@
   background-color: #f2f2f2;
 }
 
+.post__range--big {
+  display: none;
+}
+
 .post__image {
   margin-bottom: 40px;
 }
@@ -13,6 +17,8 @@
 
 .post__range {
   margin-top: 30px;
+  height: 15px;
+  background: red;
 }
 
 .post__buttons {
@@ -22,4 +28,103 @@
 
 .post__upload {
   margin-bottom: 12px;
+}
+
+@media (min-width: @tablet) {
+  .post {
+    display: flex;
+    padding: 0 20px;
+    padding-top: 57px;
+    padding-bottom: 54px;
+  }
+
+  .post__image {
+    width: 280px;
+    height: 100%;
+
+    margin-bottom: 0;
+    margin-right: 48px;
+  }
+
+  .post__change {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+
+    border-bottom: 1px solid #dddfe0;
+  }
+
+  .post__change:first-of-type {
+    padding-top: 0;
+  }
+
+  .post__range {
+    display: none;
+  }
+
+  .post__range--big {
+    display: block;
+
+    height: 15px;
+    width: 200px;
+    margin: 0;
+    margin-left: 30px;
+
+    background: red;
+  }
+
+  .post__edit {
+    width: 275px;
+    flex-shrink: 0;
+  }
+
+  .post__buttons {
+    padding: 0;
+    margin-top: 67px;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop) {
+  .post {
+    box-sizing: border-box;
+    width: 940px;
+    margin: 0 auto;
+    padding-left: 80px;
+    padding-right: 60px;
+  }
+
+  .post-edit {
+    width: 410px;
+  }
+
+  .post__change {
+    width: 410px;
+  }
+
+  .post__range--big {
+    width: 288px;
+    flex-shrink: 0;
+  }
+
+  .post__buttons {
+    display: flex;
+  }
+
+  .post__upload,
+  .post__cancel {
+    width: 183px;
+    margin: 0;
+    padding: 15px 0;
+    flex-shrink: 0;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    line-height: 1;
+  }
+
+  .post__upload {
+    margin-right: 44px;
+  }
 }
