@@ -1,9 +1,16 @@
 .logo {
   display: block;
   width: 75px;
-  height: auto;
-  margin-top: 20px;
-  margin-left: 20px;
+  height: 22px;
 
   cursor: pointer;
+}
+
+@media (min-width: @tablet) {
+  .logo {
+    width: 147px;
+    height: 40px;
+
+    background: pink;
+  }
 }

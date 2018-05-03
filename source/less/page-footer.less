@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+.page-footer--index {
+  display: none;
+}
+
 .page-footer__logo {
   display: block;
   margin-bottom: 43px;
@@ -11,15 +15,29 @@
 @media (min-width: @tablet) {
   .page-footer {
     display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 65px;
+    padding-top: 27px;
+  }
+
+  .page-footer--index {
+    display: flex;
+  }
+
+  .page-footer__logo {
+    margin-right: 75px;
   }
 }
 
 @media (min-width: @desktop) {
   .page-footer {
-    width: 940px;
+    width: @desktop;
+    box-sizing: border-box;
     margin: 0 auto;
-    padding-top: 98px;
+    padding: 0 10px;
+    padding-top: 74px;
+  }
+
+  .page-footer__logo {
+    margin-right: 0;
   }
 }

@@ -13,11 +13,23 @@
 @media (min-width: @tablet) {
   .copyright {
     display: flex;
+    margin-top: 12px;
+    margin-left: auto;
 
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .copyright__description {
-    margin-right: 14px;
+    margin-right: 16px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .copyright {
+    margin-top: 0;
+    font-size: 18px;
+    align-items: center;
+
+    line-height: 18px;
   }
 }

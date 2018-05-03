@@ -2,7 +2,6 @@ body {
   display: flex;
   flex-direction: column;
 
-  width: 320px;
   margin: 0 auto;
 
   font-family: @font;
@@ -10,16 +9,5 @@ body {
   line-height: 2;
 
   color: #000000;
-}
-
-@media (min-width: @tablet) {
-  body {
-    width: @tablet;
-  }
-}
-
-@media (min-width: @desktop) {
-  body {
-    width: @desktop;
-  }
+  overflow-x: hidden;
 }

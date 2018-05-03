@@ -3,24 +3,36 @@
 }
 
 .contacts__wrapper {
-  margin: 0 40px;
+  width: @mobile;
+  margin: 0 auto;
+}
+
+.contacts__slogan {
+  margin-bottom: 32px;
 }
 
 .contacts__list {
   display: flex;
   flex-direction: column;
   margin: 0;
-  padding: 0;
+  margin-bottom: 15px;
+  padding: 0 30px;
 
   list-style: none;
 }
 
 .contacts__item {
+  margin: 0;
+  padding: 0;
   margin-bottom: 20px;
 }
 
 .contacts__way {
+  display: block;
+  margin-bottom: 0px;
+
   font-size: 18px;
+  line-height: normal;
 }
 
 .contacts__adds {
@@ -34,11 +46,45 @@
 }
 
 .contacts__where {
+  position: relative;
+
   margin-bottom: 0;
 }
 
+.contacts__triangle {
+  position: absolute;
+  top: 0;
+  // left: 50%;
+  // margin-left: -160px;
+  margin: 0 auto;
+
+  width: 320px;
+  height: auto;
+}
+
+.contacts__triangle polygon {
+  fill: #ffffff;
+}
+
+.contacts__map {
+  width: 100%;
+}
+
 @media (min-width: @tablet) {
+  .contacts__wrapper {
+    box-sizing: border-box;
+    width: @tablet;
+    padding: 0 10px;
+    margin-bottom: 10px;
+  }
+
+  .contacts__slogan {
+    margin-bottom: 40px;
+  }
+
   .contacts__list {
+    padding: 0;
+    margin: 0;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
@@ -46,19 +92,55 @@
 
   .contacts__item {
     box-sizing: border-box;
-    width: 35%;
+    width: 50%;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    &:nth-of-type(2n) {
+      margin-bottom: 45px;
+    }
   }
 
-  .contacts__item:nth-of-type(2n) {
-    margin-left: 25%;
-    margin-bottom: 40px;
+  .contacts__way {
+    line-height: 26px;
+    margin-bottom: 5px;
+  }
+
+  .contacts__adds {
+    line-height: 28px;
+  }
+
+  .contacts__triangle {
+    width: 100%;
+    // margin-left: -330px;
+  }
+
+  .contacts__map {
+    height: 375px;
   }
 }
 
 @media (min-width: @desktop) {
+  .contacts {
+    padding-top: 16px;
+  }
+
+  .contacts__wrapper {
+    width: @desktop;
+    margin: 0 auto;
+    margin-bottom: 0;
+  }
+
+  .contacts__slogan {
+    line-height: 60px;
+
+    margin-bottom: 53px;
+  }
+
   .contacts__list {
-    width: 100%;
+    box-sizing: border-box;
     justify-content: space-between;
+    padding: 0 10px;
   }
 
   .contacts__item {
@@ -74,6 +156,15 @@
   }
 
   .contacts__adds {
-    margin-top: 10px;
+    margin-top: 25px;
+  }
+
+  .contacts__where {
+    height: 500px;
+  }
+
+  .contacts__triangle {
+    width: 100%;
+    height: auto;
   }
 }
