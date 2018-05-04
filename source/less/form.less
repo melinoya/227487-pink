@@ -1,14 +1,13 @@
-.form__wrapper {
-  padding: 0 20px;
-}
-
 .form__info {
+  box-sizing: border-box;
   display: block;
-  margin: 0;
+  width: @mobile;
+  margin: 0 auto;
   padding: 0 20px;
-  padding-top: 40px;
+  padding-top: 45px;
 
   text-align: center;
+  line-height: 30px;
 }
 
 .form__fill {
@@ -18,8 +17,8 @@
 .form__fieldset {
   position: relative;
   padding: 0;
-  padding-top: 73px;
-  padding-bottom: 44px;
+  padding-top: 35px;
+  padding-bottom: 40px;
 
   border: none;
 }
@@ -38,19 +37,26 @@
 
 .form__legend {
   position: absolute;
-  top: 40px;
+  top: 39px;
   left: 50%;
 
   display: block;
   width: 220px;
   margin: 0 auto;
-  margin-left: -110px;
+  margin-left: -112px;
   margin-bottom: 15px;
 
   text-align: center;
   color: #d22856;
   text-transform: uppercase;
   line-height: 1.29;
+}
+
+.form__wrapper {
+  box-sizing: border-box;
+  width: @mobile;
+  margin: @center;
+  padding: 0 20px;
 }
 
 .form__field {
@@ -64,7 +70,7 @@
 .form__label {
   display: block;
   margin-bottom: 5px;
-  margin-left: 20px;
+  margin-left: 23px;
 
   text-transform: uppercase;
   color: #d22856;
@@ -72,11 +78,12 @@
 
 .form__input {
   box-sizing: border-box;
-  width: 276px;
-  padding: 15px 20px;
+  width: 280px;
+  padding: 15px 21px;
+  padding-bottom: 14px;
 
   font-size: 18px;
-  line-height: 1.67;
+  line-height: 30px;
 
   border: solid 2px #e5e5e5;
   border-radius: 3px;
@@ -84,18 +91,22 @@
 }
 
 .form__list {
-  list-style: none;
+  display: flex;
+  flex-direction: column;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 78px;
   padding: 0;
+
+  list-style: none;
 }
 
 .form__textarea {
   box-sizing: border-box;
-  width: 276px;
-  height: 197px;
-  padding: 23px 20px;
+  width: 280px;
+  height: 200px;
+  padding: 13px 20px;
   margin: 0;
+  margin-top: 39px;
 
 
   font-size: 18px;
@@ -107,9 +118,16 @@
   resize: none;
 }
 
+.form__button {
+  width: 284px;
+  height: 70px;
+  padding-top: 19px;
+  margin-top: -5px;
+}
+
 .form__desc {
   display: block;
-  margin-top: 30px;
+  margin-top: 33px;
 
   text-align: center;
   text-transform: uppercase;
@@ -124,18 +142,20 @@
 
 @media (min-width: @tablet) {
   .form {
-    padding: 0 20px;
+    margin-bottom: 10px;
   }
 
   .form__wrapper {
-    margin: 0;
-    padding: 0 40px;
+    width: 620px;
+    padding: 0 60px;
   }
 
   .form__info {
+    box-sizing: border-box;
+    width: @tablet;
     margin-top: 90px;
-    margin-bottom: 70px;
-    padding: 0 65px;
+    margin-bottom: 19px;
+    padding: 0 75px;
 
     font-size: 18px;
     line-height: 30px;
@@ -148,13 +168,16 @@
   .form__body {
     display: flex;
     flex-direction: column;
+    padding-top: 10px;
   }
 
   .form__fieldset {
-    padding: 0;
-    padding-bottom: 56px;
-    padding-top: 53px;
-    margin-bottom: 60px;
+    box-sizing: border-box;
+    width: 620px;
+    margin: @center;
+    padding-top: 45px;
+    padding-bottom: 55px;
+    margin-bottom: 56px;
 
     border: 2px solid #e5e5e5;
     border-radius: 3px;
@@ -164,12 +187,36 @@
     background-color: transparent;
   }
 
+  .form__list {
+    margin-top: 0;
+  }
+
   .form__fieldset--name {
     border: none;
     order: 1;
+    padding-bottom: 0;
+
+    .form__field {
+      margin-bottom: 51px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .form__label {
+      margin-left: 0;
+      margin-right: 19px;
+      margin-bottom: 0;
+    }
+
+    .form__wrapper {
+      padding: 0;
+    }
   }
 
   .form__fieldset--achievements {
+    padding-bottom: 48px;
     order: 4;
   }
 
@@ -178,7 +225,14 @@
   }
 
   .form__fieldset--feedback {
+    padding-top: 0;
+    padding-bottom: 43px;
     order: 5;
+  }
+
+  .form__textarea {
+    width: 100%;
+    height: 191px;
   }
 
   .form__legend {
@@ -200,20 +254,34 @@
     width: 100%;
   }
 
-  .form__fieldset--name .form__wrapper {
-    padding: 0;
-  }
-
-  .form__fieldset--name .form__label {
-    margin-right: 22px;
-  }
-
   .form__fieldset--contacts {
+    padding-top: 37px;
     order: 3;
+    padding-bottom: 22px;
 
     .form__field {
+      position: relative;
+
       display: flex;
       flex-direction: column;
+      margin-bottom: 25px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+
+    .form__field::after {
+      content: "";
+      position: absolute;
+      right: 2px;
+      top: 2px;
+
+      display: block;
+      width: 60px;
+      height: 60px;
+
+      background-color: #e5e5e5;
     }
 
     .form__legend {
@@ -222,15 +290,17 @@
 
     .form__label {
       order: 2;
+      margin-left: 20px;
       margin-right: auto;
+      margin-top: 10px;
     }
   }
 
-  .form__textarea {
-    width: 100%;
-  }
-
   .form__footer {
+    box-sizing: border-box;
+    width: @tablet;
+    margin: @center;
+    padding: 0 18px;
     display: flex;
     justify-content: space-between;
     order: 6;
@@ -238,12 +308,31 @@
 
   .form__button {
     margin: 0;
+    margin-top: 7px;
+    width: 304px;
   }
 }
 
 @media (min-width: @desktop) {
   .form {
-    padding: 0 10px;
+    width: 941px;
+    margin: @center;
+  }
+
+  .form__info {
+    width: 760px;
+    margin: @center;
+    margin-top: 92px;
+    margin-bottom: 60px;
+    padding: 0;
+  }
+
+  .form__fill {
+    display: inline;
+  }
+
+  .form__wrapper {
+    width: auto;
   }
 
   .form__body {
@@ -258,16 +347,27 @@
   }
 
   .form__fieldset--name {
-    width: 47%;
+    margin: 0;
+    padding-top: 14px;
+    width: 435px;
+    margin-bottom: 58px;
   }
 
   .form__fieldset--app {
-    width: 45%;
+    margin: 0;
+    width: 435px;
+    margin-bottom: 60px;
+
+    .form__wrapper {
+      padding: 0;
+      padding-left: 75px;
+    }
   }
 
   .form__fieldset--contacts {
     box-sizing: border-box;
     padding-bottom: 10px;
+    padding-top: 32px;
 
     .form__wrapper {
       display: flex;
@@ -278,19 +378,50 @@
     }
 
     .form__field {
-      width: 45%;
+      width: 375px;
+      margin-bottom: 0;
     }
   }
 
   .form__fieldset--achievements {
+    padding-bottom: 12px;
+
+    .form__wrapper {
+      padding-right: 50px;
+    }
+
     .form__list {
       display: flex;
       flex-direction: row;
     }
+
+    .form__item {
+      margin-right: 55px;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .form__fieldset--feedback {
+    padding-bottom: 35px;
+
+    .form__textarea {
+      margin-top: 35px;
+      height: 128px;
+    }
   }
 
   .form__footer {
+    margin-top: 0;
+    padding: 0;
     width: 100%;
+  }
+
+  .form__button {
+    padding-top: 15px;
+    margin-top: 5px;
   }
 
   .form__min {
@@ -298,6 +429,7 @@
   }
 
   .form__desc {
+    margin-top: 26px;
     margin-left: auto;
   }
 }

@@ -1,16 +1,30 @@
 .radio {
+  display: flex;
+  margin-bottom: 35px;
+  align-items: center;
+
   font-size: 18px;
   line-height: 1.67;
-
   color: #283645;
+}
+
+.form__item:last-of-type .radio {
+  margin-bottom: 0;
 }
 
 .radio--indicator {
   display: block;
   width: 35px;
   height: 35px;
+  margin-right: 30px;
 
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
   border-radius: 50%;
+}
+
+@media (min-width: @tablet) {
+  .radio--indicator {
+    margin-right: 20px;
+  }
 }
