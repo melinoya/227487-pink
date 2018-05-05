@@ -1,12 +1,16 @@
 .feedbacks {
-  padding: 0 20px;
-  margin-bottom: 10px;
+  box-sizing: border-box;
+  width: 320px;
+  padding: 0 22px;
+  margin: 0 auto;
+  margin-bottom: 38px;
 
   text-align: center;
 }
 
 .feedback {
   display: none;
+  margin-bottom: 37px;
 }
 
 .feedback__name {
@@ -28,16 +32,24 @@
 }
 
 @media (min-width: @tablet) {
+  .feedbacks {
+    width: @tablet;
+  }
+
   .feedback {
     flex-direction: column;
   }
 
   .feedback__person {
     order: 2;
+    line-height: 30px;
   }
 
   .feedback__name {
     margin: 0;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   .feedback__bio {
@@ -46,7 +58,7 @@
   }
 
   .feedback__review {
-    margin-bottom: 30px;
+    margin-bottom: 34px;
 
     font-size: 18px;
   }
@@ -56,9 +68,11 @@
   .feedbacks {
     position: relative;
 
+    width: @desktop;
     padding: 0 10px;
-    padding-top: 110px;
+    padding-top: 112px;
     padding-bottom: 15px;
+    margin-bottom: 32px;
   }
 
   .feedbacks::before {
@@ -82,9 +96,14 @@
   .feedback__name {
     font-size: 24px;
     line-height: 30px;
+    margin-bottom: 3px;
   }
 
   .feedback__bio {
     font-size: 18px;
+  }
+
+  .feedback__review {
+    margin-bottom: 36px;
   }
 }

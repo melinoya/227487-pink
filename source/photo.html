@@ -9,18 +9,21 @@
 
   <body>
 
-    <header class="main-header main-header--inner main-header--nav-hidden">
+    <header class="main-header main-header--nav-hidden">
 
-      <div class="main-header__container container">
+      <div class="main-header__container">
 
-        <a href="index.html" class="logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
-        </a>
+        <div class="main-header__header">
+          <a class="logo">
+            <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
+          </a>
 
-        <button class="main-header__button main-header__button--open" type="button">Показать меню</button>
-        <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button">Скрыть меню</button>
+          <button class="main-header__button main-header__button--open" type="button"><span class="visually-hidden">Показать меню</span></button>
+          <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button"><span class="visually-hidden">Скрыть меню</span></button>
+        </div>
 
-        <nav class="main-nav main-nav--display">
+
+        <nav class="main-nav main-nav--displa">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a href="index.html" class="main-nav__link">Главная</a></li>
             <li class="main-nav__item"><a class="main-nav__link">Фотографии</a></li>

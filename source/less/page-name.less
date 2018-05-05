@@ -2,12 +2,12 @@
   position: relative;
 
   padding: 0 46px;
-  padding-top: 84px;
-  padding-bottom: 64px;
+  padding-top: 99px;
+  padding-bottom: 51px;
 
   text-align: center;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat;
-  background-color: #000000;
+  background-color: #1d2631;
 }
 
 .page-name br {
@@ -16,7 +16,12 @@
 
 .page-name--index {
   padding: 0;
-  padding-top: 160px;
+  padding-top: 179px;
+}
+
+.page-name__container {
+  width: @mobile;
+  margin: 0 auto;
 }
 
 .page-name__image {
@@ -26,44 +31,68 @@
 }
 
 .page-name__headline {
+  box-sizing: border-box;
+  display: block;
+  width: @mobile;
+  margin: 0 auto;
+  padding: 0 40px;
+
   font-size: 24px;
   font-weight: 300;
-  line-height: normal;
+  line-height: 30px;
 
   color: #ffffff;
 }
 
 @media (min-width: @tablet) {
   .page-name {
-    padding: 0 20px;
-    padding-top: 83px;
-    padding-bottom: 65px;
+    padding-top: 180px;
+    padding-bottom: 81px;
   }
 
   .page-name--index {
     display: flex;
     justify-content: space-between;
-    padding-top: 185px;
-    padding-bottom: 100px;
+    padding-top: 174px;
+    padding-bottom: 110px;
   }
 
   .page-name__image {
     position: absolute;
-    bottom: 0;
+    bottom: -110px;
     right: 20px;
     order: 2;
   }
 
   .page-name__headline {
+    width: @tablet;
+
     font-size: 50px;
+    line-height: 60px;
+  }
+
+  .page-name__container {
+    position: relative;
+
+    box-sizing: border-box;
+    width: @tablet;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 }
 
 @media (min-width: @desktop) {
   .page-name {
-    padding: 0 10px;
-    padding-top: 180px;
+    padding-top: 175px;
     padding-bottom: 100px;
+    margin-bottom: 20px;
+  }
+
+  .page-name__container {
+    box-sizing: border-box;
+    width: @desktop;
+    padding: 0 10px;
+    margin: 0 auto;
   }
 
   .page-name br {
@@ -72,10 +101,15 @@
 
   .page-name--index {
     padding-top: 210px;
-    padding-bottom: 115px;
+    padding-bottom: 122px;
   }
 
   .page-name__image {
     right: 45px;
+  }
+
+  .page-name__headline {
+    width: @desktop;
+    margin: @center;
   }
 }

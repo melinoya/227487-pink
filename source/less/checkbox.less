@@ -1,15 +1,30 @@
 .checkbox {
+  display: flex;
+  margin-bottom: 43px;
+
+  align-items: center;
   font-size: 18px;
   line-height: 1.67;
 
   color: #283645;
 }
 
+.form__item:last-of-type .checkbox:last-of-type {
+  margin-bottom: 0;
+}
+
 .checkbox--indicator {
   display: block;
   width: 35px;
   height: 35px;
+  margin-right: 30px;
 
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
+}
+
+@media (min-width: @tablet) {
+  .checkbox--indicator {
+    margin-right: 20px;
+  }
 }

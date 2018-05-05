@@ -11,16 +11,19 @@
 
     <header class="main-header main-header--nav-hidden">
 
-      <div class="main-header__container container">
+      <div class="main-header__container">
 
-        <a class="logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
-        </a>
+        <div class="main-header__header">
+          <a class="logo">
+            <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
+          </a>
 
-        <button class="main-header__button main-header__button--open" type="button">Показать меню</button>
-        <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button">Скрыть меню</button>
+          <button class="main-header__button main-header__button--open" type="button"><span class="visually-hidden">Показать меню</span></button>
+          <button class="main-header__button main-header__button--close main-header__button--nav-hidden" type="button"><span class="visually-hidden">Скрыть меню</span></button>
+        </div>
 
-        <nav class="main-nav main-nav--display">
+
+        <nav class="main-nav main-nav--displa">
           <ul class="main-nav__list">
             <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
             <li class="main-nav__item"><a href="photo.html" class="main-nav__link">Фотографии</a></li>
@@ -38,35 +41,38 @@
       <h1 class="visually-hidden">Новое приложение для жизни PINK</h1>
 
       <section class="page-name page-name--index">
+        <div class="page-name__container">
 
-        <img class="page-name__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение для телефона">
+          <img class="page-name__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение для телефона">
 
-        <div class="download-app">
-          <h2 class="visually-hidden">Скачать приложение</h2>
+          <div class="download-app">
+            <h2 class="visually-hidden">Скачать приложение</h2>
 
-          <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
-          <a href="#" class="download-app__button button">Скачать приложение</a>
+            <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
+            <a href="#" class="download-app__button button">Скачать приложение</a>
 
-          <ul class="download-app__list">
-            <li class="download-app__item">iOS</li>
-            <li class="download-app__item">Android</li>
-            <li class="download-app__item">Windows</li>
-          </ul>
+            <ul class="download-app__list">
+              <li class="download-app__item download-app__item--ios"><span class="visually-hidden">iOS</span></li>
+              <li class="download-app__item download-app__item--android"><span class="visually-hidden">Android</span></li>
+              <li class="download-app__item download-app__item--windows"><span class="visually-hidden">Windows</span></li>
+            </ul>
 
-          <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-        </div> <!-- download-app -->
-      </section>
+            <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div> <!-- download-app -->
+        </div>
+      </section> <!-- page-name -->
 
 
 
       <section class="features">
-        <div class="features__wrapper features__wrapper--slogan">
+
+        <div class="features__header">
           <h2 class="visually-hidden">Преимущества приложения</h2>
           <p class="features__slogan slogan">Устали от серости мегаполиса?</p>
-          <p class="features__slogan slogan">Нам есть, что вам предложить!</p>
+          <p class="features__slogan slogan">Нам есть, что вам<br>предложить!</p>
         </div>
 
-        <div class="features__wrapper container">
+        <div class="features__wrapper">
           <ul class="features__list">
             <li class="features__item">
               <div class="features__image"></div>
@@ -91,11 +97,11 @@
       <section class="effect">
         <h2 class="visually-hidden">Эффект от использования приложения PINK</h2>
 
-        <div class="effect__wrapper container">
+        <div class="effect__wrapper">
           <div class="effect__img"></div>
 
           <div class="effect__description">
-            <b class="effect__headline">Эффект на 24 часа!</b>
+            <b class="effect__headline">Эффект <br>на 24 часа!</b>
             <p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
             <a href="#" class="effect__link">Узнать больше об исследовании</a>
           </div>
@@ -140,142 +146,135 @@
 
 
         <div class="slider__toggles">
-          <button type="button" class="slider__toggle slider__toggle--current">1</button>
-          <button type="button" class="slider__toggle">2</button>
-          <button type="button" class="slider__toggle">3</button>
+          <button type="button" class="slider__toggle slider__toggle--current"><span class="visually-hidden">1</span></button>
+          <button type="button" class="slider__toggle"><span class="visually-hidden">2</span></button>
+          <button type="button" class="slider__toggle"><span class="visually-hidden">3</span></button>
         </div>
 
 
 
 
-      </section> <!-- feedback -->
+      </section> <!-- feedbacks -->
 
       <section class="subscriptions slider">
         <h3 class="visually-hidden">Виды подписок</h3>
 
-        <div class="slider__wrapper">
+        <div class="subscription__wrapper">
 
-          <div class="subscription subscription--big-table">
-            <header class="subscription__header subscription__header--big-table">
-              <b class="subscription__name">Что включено в план</b>
-            </header>
+          <table class="subscription__contain">
+            <tr class="subscription__item subscription__item--header">
+              <td><span class="visually-hidden">Что включено</span></td>
+              <td>
+                <b class="subscription__name">База</b>
+                <p class="subscription__price">1,99 USD</p>
+              </td>
+              <td>
+                <b class="subscription__name">Стандарт</b>
+                <p class="subscription__price">3,99 USD</p>
+                <div class="subscription__bestseller">
+                  <svg class="subscription__stripe subscription__stripe--big" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="74px" height="73px" viewBox="0 0 74 73" enable-background="new 0 0 74 73" xml:space="preserve">
+                    <polygon fill="#D22856" points="31,0 0,30.581 0,73 74,0 "/>
+                  </svg>
+                  <svg class="subscription__stripe subscription__stripe--small" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="61px" height="61px" viewBox="0 6 61 61" enable-background="new 0 6 61 61" xml:space="preserve">
+                    <polygon fill="#D22856" points="18.975,6 0,25.062 0,67 61.09,6 "/>
+                  </svg>
+                  <span class="subscription__hit">Хит</span>
+                </div>
+              </td>
+              <td>
+                <b class="subscription__name">Анлим</b>
+                <p class="subscription__price">9,99 USD</p>
+              </td>
+            </tr>
 
-            <table class="subscription__contain">
-              <tr class="subscription__item">
-                <td class="subscription__description subscription__description--big-table">Розовый фильтр</td>
-              </tr>
+            <tr class="subscription__item">
+              <td class="subscription__plan">Розовый фильтр</td>
+              <td class="subscription__plan">
+                <span class="subscription__description">Розовый фильтр</span>
+                <svg class="subscription__included" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
 
-              <tr class="subscription__item">
-                <td class="subscription__description subscription__description--big-table">Смайлики</td>
-              </tr>
+              <td class="subscription__plan">
+                <span class="subscription__description">Розовый фильтр</span>
+                <svg class="subscription__included" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
 
-              <tr class="subscription__item">
-                <td class="subscription__description subscription__description--big-table">Комментарии</td>
-              </tr>
+              <td class="subscription__plan">
+                <span class="subscription__description">Розовый фильтр</span>
+                <svg class="subscription__included" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
+            </tr>
 
-            </table>
-          </div>
+            <tr class="subscription__item">
+              <td class="subscription__plan">Смайлики</td>
 
+              <td class="subscription__plan">
+                <span class="subscription__description">Смайлики</span>
+                <svg class="subscription__excluded" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+              </td>
 
-          <div class="subscription slider__slide">
+              <td class="subscription__plan">
+                <span class="subscription__description">Смайлики</span>
+                <svg class="subscription__included" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
 
-            <header class="subscription__header">
-              <b class="subscription__name">База</b>
-              <p class="subscription__price">1,99 USD</p>
-            </header>
+              <td class="subscription__plan">
+                <span class="subscription__description">Смайлики</span>
+                <svg class="subscription__included" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
+            </tr>
 
-            <table class="subscription__contain">
+            <tr class="subscription__item">
+              <td class="subscription__plan">Комментарии</td>
+              <td class="subscription__plan">
+                <span class="subscription__description">Комментарии</span>
+                <svg class="subscription__excluded" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+              </td>
 
-              <tr class="subscription__item">
-                <td class="subscription__description">Розовый фильтр</td>
-                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-              </tr>
+              <td class="subscription__plan">
+                <span class="subscription__description">Комментарии</span>
+                <svg class="subscription__excluded" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.752px" height="26.752px" viewBox="0 0 26.752 26.752" enable-background="new 0 0 26.752 26.752" xml:space="preserve">
+                  <path d="M15.497,13.376L26.312,2.562c0.586-0.585,0.586-1.535,0-2.121s-1.535-0.586-2.121,0L13.376,11.255L2.562,0.439 c-0.586-0.586-1.535-0.586-2.121,0c-0.586,0.585-0.586,1.535,0,2.121l10.814,10.815L0.439,24.19c-0.586,0.586-0.586,1.535,0,2.121 c0.293,0.293,0.677,0.439,1.061,0.439s0.768-0.146,1.061-0.439l10.815-10.814L24.19,26.312c0.293,0.293,0.677,0.439,1.061,0.439 s0.768-0.146,1.061-0.439c0.586-0.586,0.586-1.535,0-2.121L15.497,13.376z"/>
+                </svg>
+              </td>
 
-              <tr class="subscription__item">
-                <td class="subscription__description">Смайлики</td>
-                <td class="subscription__term subscription__term--exclude"><span class="visually-hidden">Не включен</span></td>
-              </tr>
-
-              <tr class="subscription__item">
-                <td class="subscription__description">Комментарии</td>
-                <td class="subscription__term subscription__term--exclude"><span class="visually-hidden">Не включен</span></td>
-              </tr>
-
-            </table>
-
-          </div> <!-- first slide -->
-
-          <div class="subscription slider__slide slider__slide--current">
-
-            <header class="subscription__header">
-              <div class="subscription__bestseller">Хит</div>
-              <b class="subscription__name">Стандарт</b>
-              <p class="subscription__price">3,99 USD</p>
-            </header>
-
-
-            <table class="subscription__contain">
-
-              <tr class="subscription__item">
-                <td class="subscription__description">Розовый фильтр</td>
-                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-              </tr>
-
-              <tr class="subscription__item">
-                <td class="subscription__description">Смайлики</td>
-                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-              </tr>
-
-              <tr class="subscription__item">
-                <td class="subscription__description">Комментарии</td>
-                <td class="subscription__term subscription__term--exclude"><span class="visually-hidden">Не включен</span></td>
-              </tr>
-
-            </table>
-
-          </div> <!-- second slide -->
-
-          <div class="subscription slider__slide">
-
-            <header class="subscription__header">
-              <b class="subscription__name">Анлим</b>
-              <p class="subscription__price">9,99 USD</p>
-            </header>
-
-
-            <table class="subscription__contain">
-
-              <tr class="subscription__item">
-                <td class="subscription__description">Розовый фильтр</td>
-                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-              </tr>
-
-              <tr class="subscription__item">
-                <td class="subscription__description">Смайлики</td>
-                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-              </tr>
-
-              <tr class="subscription__item">
-                <td class="subscription__description">Комментарии</td>
-                <td class="subscription__term subscription__term--include"><span class="visually-hidden">Включен</span></td>
-              </tr>
-
-            </table>
-          </div> <!-- third slide -->
+              <td class="subscription__plan">
+                <span class="subscription__description">Комментарии</span>
+                <svg class="subscription__included" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31px" height="21px" viewBox="-82.357 4.875 21.698 16.09" enable-background="new -82.357 4.875 21.698 16.09" xml:space="preserve">
+                  <path d="M-60.953,5.167c-0.391-0.391-1.023-0.391-1.414,0L-75.75,18.551l-4.9-4.9c-0.391-0.391-1.023-0.391-1.414,0 s-0.391,1.023,0,1.414l5.607,5.607c0.195,0.195,0.451,0.293,0.707,0.293s0.512-0.098,0.707-0.293l14.09-14.0 C-60.562,6.191-60.562,5.558-60.953,5.167z"/>
+                </svg>
+              </td>
+            </tr>
+          </table>
         </div>
 
         <div class="slider__toggles">
-          <button type="button" class="slider__toggle">1</button>
-          <button type="button" class="slider__toggle slider__toggle--current">2</button>
-          <button type="button" class="slider__toggle">3</button>
+          <button type="button" class="slider__toggle"><span class="visually-hidden">1</span></button>
+          <button type="button" class="slider__toggle slider__toggle--current"><span class="visually-hidden">2</span></button>
+          <button type="button" class="slider__toggle"><span class="visually-hidden">3</span></button>
         </div>
 
-      </section> <!-- subscription -->
+      </section> <!-- subscriptions -->
 
-      <section class="contacts container">
+      <section class="contacts">
         <h3 class="visually-hidden">Контакты для связи с нами</h3>
 
-          <p class="contacts__slogan slogan">Остались вопросы? <br> Свяжитесь с нами!</p>
+        <div class="contacts__wrapper">
+          <p class="contacts__slogan slogan">Остались вопросы?<br>Свяжитесь с нами!</p>
           <ul class="contacts__list">
             <li class="contacts__item">
               <b class="contacts__way">Звоните:</b>
@@ -290,12 +289,47 @@
               <p class="contacts__adds">ул. Большая Конюшенная, 19/8</p>
             </li>
           </ul>
+        </div>
 
         <div class="contacts__where">
-          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8" class="contacts__map" width="320" height="200">
+          <svg class="contacts__triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
+            <polygon fill="#000000" points="297.64,61.905 0,0 595.28,0 "/>
+          </svg>
+          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8" class="contacts__map" height="200">
         </div>
 
       </section> <!-- contacts -->
+
+      <footer class="page-footer page-footer--index">
+
+      <a class="page-footer__logo logo__img"><img src="img/logo-pink-blue-mobile.svg" alt="PINK" width="147" height="40"></a>
+
+      <ul class="social">
+        <li class="social__item">
+          <a href="#" class="social__link social__link--twitter">
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="#" class="social__link social__link--facebook">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+
+        <li class="social__item">
+          <a href="#" class="social__link social__link--youtube">
+            <span class="visually-hidden">Youtube</span>
+          </a>
+        </li>
+      </ul>
+
+      <div class="copyright">
+        <p class="copyright__description">Разработано</p>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link"><span class="visually-hidden">HTML Academy</span></a>
+      </div>
+
+    </footer>
 
     </main>
 
