@@ -88,6 +88,18 @@
   border: solid 2px #e5e5e5;
   border-radius: 3px;
   color: #283645;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
+}
+
+.form__icon {
+  display: none;
 }
 
 .form__list {
@@ -107,7 +119,6 @@
   padding: 13px 20px;
   margin: 0;
   margin-top: 39px;
-
 
   font-size: 18px;
   font-family: inherit;
@@ -142,7 +153,7 @@
 
 @media (min-width: @tablet) {
   .form {
-    margin-bottom: 10px;
+    padding-bottom: 50px;
   }
 
   .form__wrapper {
@@ -246,12 +257,43 @@
   }
 
   .form__field {
+    position: relative;
+
     display: flex;
     align-items: center;
   }
 
   .form__input {
     width: 100%;
+  }
+
+  .form__icon {
+    position: absolute;
+    z-index: 2;
+
+    display: block;
+
+    background: red;
+  }
+
+  .form__icon--phone {
+    top: 20px;
+    right: 20px;
+
+    width: 20px;
+    height: 19px;
+
+    background: url("../img/icon-phone.svg") no-repeat;
+  }
+
+  .form__icon--mail {
+    top: 25px;
+    right: 22px;
+
+    width: 18px;
+    height: 13px;
+
+    background: url("../img/icon-mail.svg") no-repeat;
   }
 
   .form__fieldset--contacts {
@@ -279,7 +321,7 @@
 
       display: block;
       width: 60px;
-      height: 60px;
+      height: 59px;
 
       background-color: #e5e5e5;
     }
@@ -293,6 +335,10 @@
       margin-left: 20px;
       margin-right: auto;
       margin-top: 10px;
+    }
+
+    .form__input {
+      padding-right: 70px;
     }
   }
 
@@ -317,6 +363,7 @@
   .form {
     width: 941px;
     margin: @center;
+    padding-bottom: 0;
   }
 
   .form__info {

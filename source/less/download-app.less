@@ -71,7 +71,11 @@
 
 @media (min-width: @tablet) {
   .download-app {
-    width: 300px;
+    position: relative;
+    z-index: 2;
+
+    box-sizing: border-box;
+    width: @tablet;
     padding-bottom: 0;
 
     font-size: 18px;
@@ -79,6 +83,11 @@
 
     background-color: transparent;
     text-align: center;
+
+  }
+
+  .download-app__wrapper {
+    width: 300px;
   }
 
   .download-app__slogan {
@@ -110,9 +119,15 @@
 
 @media (min-width: @desktop) {
   .download-app {
-    width: 300px;
+    width: @desktop;
+    margin: @center;
     padding: 0;
     padding-top: 8px;
+
+  }
+
+  .download-app__wrapper {
+    width: 300px;
   }
 
   .download-app__slogan {

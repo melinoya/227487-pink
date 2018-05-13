@@ -15,7 +15,11 @@
 
         <div class="main-header__header">
           <a class="logo">
-            <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__img logo__img--mobile" src="img/logo-pink-white-mobile.svg" alt="PINK">
+            </picture>
           </a>
 
           <button class="main-header__button main-header__button--open" type="button"><span class="visually-hidden">Показать меню</span></button>
@@ -41,25 +45,27 @@
       <h1 class="visually-hidden">Новое приложение для жизни PINK</h1>
 
       <section class="page-name page-name--index">
-        <div class="page-name__container">
 
-          <img class="page-name__image" src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Приложение для телефона">
+        <div class="page-name__container">
+          <div class="page-name__image"><div class="visually-hidden">Приложение для телефона</div></div>
 
           <div class="download-app">
-            <h2 class="visually-hidden">Скачать приложение</h2>
+            <div class="download-app__wrapper">
+              <h2 class="visually-hidden">Скачать приложение</h2>
 
-            <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
-            <a href="#" class="download-app__button button">Скачать приложение</a>
+              <p class="download-app__slogan">Взгляните на жизнь иначе!</p>
+              <a href="#" class="download-app__button button">Скачать приложение</a>
 
-            <ul class="download-app__list">
-              <li class="download-app__item download-app__item--ios"><span class="visually-hidden">iOS</span></li>
-              <li class="download-app__item download-app__item--android"><span class="visually-hidden">Android</span></li>
-              <li class="download-app__item download-app__item--windows"><span class="visually-hidden">Windows</span></li>
-            </ul>
+              <ul class="download-app__list">
+                <li class="download-app__item download-app__item--ios"><span class="visually-hidden">iOS</span></li>
+                <li class="download-app__item download-app__item--android"><span class="visually-hidden">Android</span></li>
+                <li class="download-app__item download-app__item--windows"><span class="visually-hidden">Windows</span></li>
+              </ul>
 
-            <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-          </div> <!-- download-app -->
-        </div>
+              <p class="download-app__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            </div>
+          </div>
+        </div> <!-- download-app -->
       </section> <!-- page-name -->
 
 
@@ -75,17 +81,17 @@
         <div class="features__wrapper">
           <ul class="features__list">
             <li class="features__item">
-              <div class="features__image"></div>
+              <div class="features__image features__image--first"></div>
               <b class="features__headline">Поднимает настроение</b>
               <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="features__item">
-              <div class="features__image"></div>
+              <div class="features__image features__image--second"></div>
               <b class="features__headline">Меняет мир вокруг</b>
               <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="features__item">
-              <div class="features__image features__image--hello"></div>
+              <div class="features__image features__image--third"></div>
               <b class="features__headline">Заводит новых друзей</b>
               <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
@@ -98,7 +104,7 @@
         <h2 class="visually-hidden">Эффект от использования приложения PINK</h2>
 
         <div class="effect__wrapper">
-          <div class="effect__img"></div>
+          <div class="effect__img">24</div>
 
           <div class="effect__description">
             <b class="effect__headline">Эффект <br>на 24 часа!</b>
@@ -150,9 +156,6 @@
           <button type="button" class="slider__toggle"><span class="visually-hidden">2</span></button>
           <button type="button" class="slider__toggle"><span class="visually-hidden">3</span></button>
         </div>
-
-
-
 
       </section> <!-- feedbacks -->
 
@@ -295,7 +298,7 @@
           <svg class="contacts__triangle" version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.28px" height="61.905px" viewBox="0 0 595.28 61.905" enable-background="new 0 0 595.28 61.905" xml:space="preserve">
             <polygon fill="#000000" points="297.64,61.905 0,0 595.28,0 "/>
           </svg>
-          <img src="img/bg-map-mobile@1x.png" alt="ул. Большая Конюшенная, 19/8" class="contacts__map" height="200">
+          <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.598942412426!2d30.320894616494105!3d59.93879686904746!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1526203735183" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
 
       </section> <!-- contacts -->

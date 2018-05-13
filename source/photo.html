@@ -14,8 +14,12 @@
       <div class="main-header__container">
 
         <div class="main-header__header">
-          <a class="logo">
-            <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
+          <a href="index.html" class="logo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__img logo__img--mobile" src="img/logo-pink-white-mobile.svg" alt="PINK">
+            </picture>
           </a>
 
           <button class="main-header__button main-header__button--open" type="button"><span class="visually-hidden">Показать меню</span></button>
@@ -55,7 +59,13 @@
             <h3 class="visually-hidden">Панорама дня</h3>
 
             <div class="photo__img-tag">Панорама дня</div>
-            <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="photo__img photo__img--wide" width="320" height="137">
+            <a href="#" class="photo__full">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/panorama-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+                <img src="img/panorama-mobile@1x.jpg" alt="Панорама дня" class="photo__img photo__img--wide">
+              </picture>
+            </a>
 
             <div class="photo__info">
               <b class="photo__name">Анна</b>
@@ -71,7 +81,13 @@
 
 
             <div class="photo gallery__image">
-              <img src="img/photo-car-mobile@1x.jpg" alt="Фотография пользователя" class="photo__img" width="280" height="180">
+              <a href="#" class="photo__full">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-car-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+                  <img src="img/photo-car-mobile@1x.jpg" alt="Фото пользователей" class="photo__img">
+                </picture>
+              </a>
 
               <div class="photo__info">
                 <b class="photo__name">Левон</b>
@@ -82,7 +98,14 @@
             </div>
 
             <div class="photo gallery__image">
-              <img src="img/photo-drumset-mobile@1x.jpg" alt="Фотография пользователя" class="photo__img" width="280" height="180">
+              <a href="#" class="photo__full">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                  <img src="img/photo-drumset-mobile@1x.jpg" alt="Фото пользователей" class="photo__img">
+                </picture>
+              </a>
+
               <div class="photo__info">
                 <b class="photo__name">Антон</b>
                 <span class="photo__time">(12 часов назад)</span>
@@ -92,7 +115,14 @@
             </div>
 
             <div class="photo gallery__image">
-              <img src="img/photo-window-mobile@1x.jpg" alt="Фотография пользователя" class="photo__img" width="280" height="180">
+              <a href="#" class="photo__full">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-window-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                  <img src="img/photo-window-mobile@1x.jpg" alt="Фото пользователей" class="photo__img">
+                </picture>
+              </a>
+
               <div class="photo__info">
                 <b class="photo__name">Борис</b>
                 <span class="photo__time">(20 часов назад)</span>
@@ -102,7 +132,14 @@
             </div>
 
             <div class="photo gallery__image">
-              <img src="img/photo-fair-mobile@1x.jpg" alt="Фотография пользователя" class="photo__img" width="280" height="180">
+              <a href="#" class="photo__full">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-fair-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                  <img src="img/photo-fair-mobile@1x.jpg" alt="Фото пользователей" class="photo__img">
+                </picture>
+              </a>
+
               <div class="photo__info">
                 <b class="photo__name">Сергей</b>
                 <span class="photo__time">(25 часов назад)</span>
@@ -112,7 +149,14 @@
             </div>
 
             <div class="photo gallery__image">
-              <img src="img/photo-pov-mobile@1x.jpg" alt="Фотография пользователя" class="photo__img" width="280" height="180">
+              <a href="#" class="photo__full">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-pov-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                  <img src="img/photo-pov-mobile@1x.jpg" alt="Фото пользователей" class="photo__img">
+                </picture>
+              </a>
+
               <div class="photo__info">
                 <b class="photo__name">Максим</b>
                 <span class="photo__time">(40 часов назад)</span>
@@ -122,7 +166,14 @@
             </div>
 
             <div class="photo gallery__image">
-              <img src="img/photo-wing-mobile@1x.jpg" alt="Фотография пользователя" class="photo__img" width="280" height="180">
+              <a href="#" class="photo__full">
+                <picture>
+                  <source media="(min-width: 960px)" srcset="img/photo-wing-desktop@1x.jpg">
+                  <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                  <img src="img/photo-wing-mobile@1x.jpg" alt="Фото пользователей" class="photo__img">
+                </picture>
+              </a>
+
               <div class="photo__info">
                 <b class="photo__name">Надежда</b>
                 <span class="photo__time">(45 часов назад)</span>
@@ -144,11 +195,16 @@
           <p class="upload-photo__slogan">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
 
-        <div class="post">
+        <form class="post" name="post" method="post" action="https://echo.htmlacademy.ru">
 
           <div class="post__container">
-
-            <img src="img/photo-road-mobile@1x.jpg" alt="Запостите ваше фото" class="post__image" width="280" height="374">
+            <a href="#" class="photo__full">
+              <picture>
+                <source media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.jpg">
+                <source media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.jpg">
+                <img src="img/photo-road-mobile@1x.jpg" alt="Запостите ваше фото" class="post__image">
+              </picture>
+            <a href="#" class="photo__full">
 
             <div class="post__edit">
 
@@ -157,7 +213,15 @@
                 <div class="post__decore">
 
                   <div class="post__change">
-                    <a href="#" class="post__crop"><span class="visually-hidden">Обрезать</span></a>
+                    <a href="#" class="post__icon post__crop post__current">
+
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="none" d="M0,0h48v48H0V0z"/>
+                        <path class="post__contour" d="M34,30h4V14c0-2.21-1.79-4-4-4H18v4h16V30z M14,34V2h-4v8H2v4h8v20c0,2.21,1.79,4,4,4h20v8h4v-8h8v-4H14z"/>
+                      </svg>
+
+                      <span class="visually-hidden">Обрезать</span>
+                    </a>
                     <div class="post__range post__range--big">
                       <div class="post__length"></div>
                       <div class="post__toggle"></div>
@@ -165,7 +229,18 @@
                   </div>
 
                   <div class="post__change">
-                    <a href="#" class="post__color"><span class="visually-hidden">Заливка</span></a>
+
+                    <a href="#" class="post__icon post__color">
+
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="50px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+                        <path fill="none" d="M0,0h48v48H0V0z"/>
+                        <path class="post__contour" d="M33.12,17.88L15.24,0l-2.83,2.83l4.76,4.76L6.88,17.88c-1.17,1.17-1.17,3.07,0,4.24l11,11C18.46,33.71,19.23,34,20,34 s1.54-0.29,2.12-0.88l11-11C34.29,20.95,34.29,19.05,33.12,17.88z M10.41,20L20,10.42L29.59,20H10.41z M38,23c0,0-4,4.33-4,7 c0,2.21,1.79,4,4,4s4-1.79,4-4C42,27.33,38,23,38,23z"/>
+                        <rect class="post__contour" y="40" width="50" height="3"/>
+                      </svg>
+
+                      <span class="visually-hidden">Заливка</span>
+                    </a>
+
                     <div class="post__range post__range--big">
                       <div class="post__length"></div>
                       <div class="post__toggle"></div>
@@ -173,7 +248,16 @@
                   </div>
 
                   <div class="post__change">
-                    <a href="#" class="post__filter"><span class="visually-hidden">Фильтр</span></a>
+                    <a href="#" class="post__icon post__filter">
+
+                      <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="31.92px" height="31.92px" viewBox="-35.422 -7.96 31.92 31.92" enable-background="new -35.422 -7.96 31.92 31.92" xml:space="preserve">
+                        <path class="post__contour" d="M-19.462-3.96c6.595,0,11.96,5.365,11.96,11.96s-5.365,11.96-11.96,11.96S-31.422,14.595-31.422,8 S-26.057-3.96-19.462-3.96 M-19.462-7.96c-8.814,0-15.96,7.145-15.96,15.96c0,8.813,7.146,15.96,15.96,15.96S-3.502,16.813-3.502,8 C-3.502-0.815-10.648-7.96-19.462-7.96L-19.462-7.96z"/>
+                        <path class="post__contour" d="M-19.462,16.331c4.706,0,8.52-3.813,8.52-8.52c0-4.705-3.813-8.519-8.52-8.519"/>
+                      </svg>
+
+                      <span class="visually-hidden">Фильтр</span>
+
+                    </a>
                     <div class="post__range post__range--big">
                       <div class="post__length"></div>
                       <div class="post__toggle"></div>
@@ -189,14 +273,14 @@
               </div>
 
               <div class="post__buttons">
-                <a href="#" class="post__upload button button--pink">Запостить</a>
-                <a href="#" class="post__cancel button button--gray">Отмена</a>
+                <button type="submit" class="post__upload button button--pink">Запостить</button>
+                <button type="reset" class="post__cancel button button--gray">Отмена</a>
               </div>
             </div>
           </div>
 
 
-        </div> <!-- post -->
+        </form> <!-- post -->
       </section> <!-- upload-photo -->
     </main>
 

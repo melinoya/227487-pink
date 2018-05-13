@@ -14,8 +14,12 @@
       <div class="main-header__container">
 
         <div class="main-header__header">
-          <a class="logo">
-            <img src="img/logo-pink-white-mobile.svg" alt="PINK" width="75" height="22" class="logo__img logo__img--mobile">
+          <a href="index.html" class="logo">
+            <picture>
+              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+              <img class="logo__img logo__img--mobile" src="img/logo-pink-white-mobile.svg" alt="PINK">
+            </picture>
           </a>
 
           <button class="main-header__button main-header__button--open" type="button"><span class="visually-hidden">Показать меню</span></button>
@@ -140,11 +144,15 @@
               <div class="form__field">
                 <label for="tel" class="form__label">Номер телефона</label>
                 <input type="text" class="form__input" id="tel" name="tel" placeholder="Номер, пожалуйста">
+                <span class="form__icon form__icon--phone"></span>
+
               </div>
 
               <div class="form__field">
                 <label for="email" class="form__label">Адрес почты</label>
                 <input type="text" class="form__input" id="email" name="email" placeholder="Введите почту *">
+                <span class="form__icon form__icon--mail"></span>
+
               </div>
             </div>
 
@@ -158,7 +166,7 @@
 
                 <li class="form__item">
                   <label class="radio">
-                    <input type="radio" class="visually-hidden" value="1" checked>
+                    <input type="radio" class="visually-hidden" name="app" value="1" checked>
                     <span class="radio--indicator"></span>
                     Pink для iOS
                   </label>
@@ -166,7 +174,7 @@
 
                 <li class="form__item">
                   <label class="radio">
-                    <input type="radio" class="visually-hidden" value="2">
+                    <input type="radio" class="visually-hidden" name="app" value="2">
                     <span class="radio--indicator"></span>
                     Pink на Android
                   </label>
@@ -174,7 +182,7 @@
 
                 <li class="form__item">
                   <label class="radio">
-                    <input type="radio" class="visually-hidden" value="3">
+                    <input type="radio" class="visually-hidden" name="app" value="3">
                     <span class="radio--indicator"></span>
                     Windows Phone
                   </label>

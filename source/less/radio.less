@@ -13,6 +13,8 @@
 }
 
 .radio--indicator {
+  position: relative;
+
   display: block;
   width: 35px;
   height: 35px;
@@ -20,6 +22,35 @@
 
   background-color: #ffffff;
   border: solid 2px #e5e5e5;
+  border-radius: 50%;
+}
+
+.radio:hover .radio--indicator {
+  border-color: #283645;
+}
+
+.radio:active .radio--indicator,
+.radio input[type="radio"]:focus + .radio--indicator {
+  border-color: #d22856;
+}
+
+.radio--indicator::before {
+  display: none;
+}
+
+.radio input[type="radio"]:checked + .radio--indicator::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-top: -7.5px;
+  margin-left: -7.5px;
+
+  background-color: #d22856;
   border-radius: 50%;
 }
 

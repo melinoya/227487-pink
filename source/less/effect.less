@@ -18,12 +18,38 @@
   }
 
   .effect__img {
+    position: relative;
+
+    box-sizing: border-box;
     width: 238px;
     height: 276px;
     flex-shrink: 0;
+    padding-top: 75px;
 
-    background: url("");
-    background-color: #d22856;
+    font-size: 96px;
+    font-weight: bold;
+    line-height: 150px;
+    color: #d22856;
+    text-align: center;
+
+    background: url("../img/icon-timer.svg") no-repeat;
+    background-size: cover;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      box-sizing: border-box;
+      width: 202px;
+      height: 202px;
+      margin-left: -100px;
+      margin-top: -83px;
+
+      border: 13px solid #d22856;
+      border-radius: 50%;
+    }
   }
 
   .effect__description {
@@ -71,16 +97,36 @@
   .effect__img {
     width: 298px;
     height: 345px;
+    padding-top: 95px;
     margin-right: 67px;
+
+    font-size: 120px;
+    line-height: 187px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+
+      box-sizing: border-box;
+      width: 253px;
+      height: 253px;
+      margin-left: -127px;
+      margin-top: -102px;
+
+      border: 16px solid #d22856;
+      border-radius: 50%;
+    }
   }
 
   .effect__description {
     width: auto;
-    padding-top: 42px;
+    padding-top: 47px;
   }
 
   .effect__headline {
-    margin-bottom: 20px;
+    margin-bottom: 23px;
   }
 
   .effect__headline br {
