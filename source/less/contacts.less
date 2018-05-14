@@ -67,7 +67,8 @@
 
 .contacts__map {
   display: block;
-  width: 100%;
+  height: 200px;
+  width: 100vw;
 }
 
 @media (min-width: @tablet) {
@@ -128,7 +129,7 @@
   .contacts__wrapper {
     width: @desktop;
     margin: 0 auto;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .contacts__slogan {
@@ -144,7 +145,7 @@
   }
 
   .contacts__item {
-    width: 30%;
+    width: 30.5%;
   }
 
   .contacts__item:nth-of-type(2) {
@@ -159,13 +160,14 @@
     margin-top: 25px;
   }
 
-  .contacts__where {
-    height: 500px;
+  .contacts__triangle {
+    top: 0;
+    width: 960px;
+    height: 90px;
+    margin-left: -480px;
   }
 
-  .contacts__triangle {
-    width: 960px;
-    height: auto;
-    margin-left: -480px;
+  .contacts__map {
+    height: 485px;
   }
 }
