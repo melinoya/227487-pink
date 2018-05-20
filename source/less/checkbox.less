@@ -38,6 +38,10 @@
   display: none;
 }
 
+.checkbox input[type="checkbox"]:checked + .checkbox--indicator {
+  border-color: #d22856;
+}
+
 .checkbox input[type="checkbox"]:checked + .checkbox--indicator::before {
   content: "";
   position: absolute;
