@@ -1,23 +1,29 @@
 .copyright {
   display: flex;
-}
 
-.copyright__description {
-  margin: 0;
-  margin-right: 17px;
+  &:hover path,
+  &:focus path {
+    fill: #283645;
+  }
+
+  &:active path {
+    opacity: 0.3;
+  }
 }
 
 .copyright__link {
-  display: block;
-  width: 27px;
-  height: 34px;
+  display: flex;
 
-  background: url("../img/logo-htmlacademy.svg") no-repeat;
+  text-decoration: none;
+  color: #283645;
+}
+
+.copyright__description {
+  margin-right: 13px;
 }
 
 @media (min-width: @tablet) {
   .copyright {
-    display: flex;
     margin-top: 12px;
     margin-left: auto;
 

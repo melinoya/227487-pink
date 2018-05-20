@@ -23,10 +23,20 @@
 
   border: none;
   border-radius: 50%;
-  background-color: #bec2c7;
+  background-color: #283645;
+  opacity: 0.3;
 
   &:last-of-type {
     margin-right: 0;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 }
 
@@ -34,8 +44,19 @@
   box-sizing: border-box;
   width: 12px;
   height: 12px;
-  border: 3px solid #000000;
+
+  opacity: 1;
+  border: 3px solid #283645;
   background-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 1;
+  }
 }
 
 .slider__wrapper {
@@ -78,6 +99,17 @@
     border: 2px solid #c2c6ca;
     border-top: none;
     border-right: none;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      border-color: #283645;
+    }
+
+    &:active {
+      opacity: 0.1;
+    }
   }
 
   .slider__prev {

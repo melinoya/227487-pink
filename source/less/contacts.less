@@ -43,32 +43,68 @@
   line-height: normal;
 
   color: #d22856;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: #283645;
+    text-decoration: underline;
+  }
+
+  &:active {
+    color: rgba(40, 54, 69, 0.3);
+    text-decoration: none;
+  }
 }
 
 .contacts__where {
   position: relative;
 
   margin-bottom: 0;
-}
+  height: 200px;
 
-.contacts__triangle {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -160px;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 10;
 
-  width: 320px;
-  height: auto;
-}
+    margin-left: -160px;
 
-.contacts__triangle polygon {
-  fill: #ffffff;
+    width: 320px;
+    height: 30px;
+
+    background: url("../img/bg-triangle-white-footer.svg") no-repeat;
+    background-position: 50%;
+    background-size: contain;
+  }
 }
 
 .contacts__map {
   display: block;
   height: 200px;
   width: 100vw;
+}
+
+.contacts__route {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  z-index: -1;
+
+  display: block;
+  width: 320px;
+  height: 200px;
+  margin-left: -160px;
+
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  background-size: cover;
+  background-position: 50% 100%;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-map-mobile@2x.jpg");
+  }
 }
 
 @media (min-width: @tablet) {
@@ -111,13 +147,32 @@
     line-height: 28px;
   }
 
-  .contacts__triangle {
-    width: 660px;
-    margin-left: -330px;
+  .contacts__where {
+    height: 375px;
+
+    &::before {
+      width: 660px;
+      height: 65px;
+      margin-left: -330px;
+    }
   }
 
   .contacts__map {
     height: 375px;
+  }
+
+  .contacts__route {
+    width: 660px;
+    height: 375px;
+    margin-left: -330px;
+
+    background: url("../img/bg-map-tablet@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% -320px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.jpg");
+    }
   }
 }
 
@@ -160,14 +215,33 @@
     margin-top: 25px;
   }
 
-  .contacts__triangle {
-    top: 0;
+  .contacts__where {
+    height: 500px;
+
+    &::before {
+      top: -1px;
+
+      width: 960px;
+      height: 90px;
+      margin-left: -480px;
+    }
+  }
+
+  .contacts__route {
     width: 960px;
-    height: 90px;
+    height: 500px;
     margin-left: -480px;
+
+    background: url("../img/bg-map-desktop@1x.jpg") no-repeat;
+    background-size: cover;
+    background-position: 50% -215px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.jpg");
+    }
   }
 
   .contacts__map {
-    height: 485px;
+    height: 500px;
   }
 }

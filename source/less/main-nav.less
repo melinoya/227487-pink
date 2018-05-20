@@ -21,6 +21,18 @@
   border-bottom: 1px solid #000000;
 }
 
+.main-nav__item a[href] {
+  &:hover,
+  &:focus {
+    color: #d22856;
+  }
+
+  &:active {
+    color: #d22856;
+    opacity: 0.5;
+  }
+}
+
 .main-nav__item:first-of-type {
   border-top: 1px solid #000000;
 }
@@ -64,12 +76,42 @@
     }
   }
 
-  .main-nav__link {
-    text-transform: none;
-    line-height: normal;
-  }
-
   .main-nav__item:first-of-type {
     border: none;
+  }
+
+  .main-nav__link {
+    position: relative;
+
+    text-transform: none;
+    line-height: normal;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      display: block;
+      height: 2px;
+      width: 100%;
+
+      background-color: #ffffff;
+    }
+  }
+
+  .main-nav__item a[href] {
+    &:hover,
+    &:focus {
+      color: #d22856;
+    }
+
+    &:active {
+      color: rgba(255, 255, 255, 0.3);
+    }
+
+    &::before {
+      display: none;
+    }
   }
 }
