@@ -21,6 +21,15 @@
 
   border: solid 3px #e9ebec;
   border-radius: 50%;
+
+  &:hover,
+  &:focus {
+    border-color: #283645;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .social__link--twitter {
@@ -35,7 +44,7 @@
 
 .social__link--youtube {
   background: url("../img/icon-youtube.svg") no-repeat;
-  background-position: 60%;
+  background-position: 50%;
 }
 
 @media (min-width: @tablet) {
