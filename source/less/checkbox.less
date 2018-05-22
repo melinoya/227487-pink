@@ -25,20 +25,12 @@
   border: solid 2px #e5e5e5;
 }
 
-.checkbox:hover .checkbox--indicator {
+.checkbox:hover .checkbox--indicator,
+.checkbox input[type="checkbox"]:focus + .checkbox--indicator {
   border-color: #283645;
 }
 
-.checkbox:active .checkbox--indicator,
-.checkbox input[type="checkbox"]:focus + .checkbox--indicator {
-  border-color: #d22856;
-}
-
-.radio--indicator::before {
-  display: none;
-}
-
-.checkbox input[type="checkbox"]:checked + .checkbox--indicator {
+.checkbox input[type="checkbox"]:active + .checkbox--indicator {
   border-color: #d22856;
 }
 
