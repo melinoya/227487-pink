@@ -8,6 +8,9 @@
   </head>
 
   <body>
+    <div class="sprite" style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="main-header">
 
@@ -15,11 +18,15 @@
 
         <div class="main-header__header">
           <a class="logo">
-            <picture>
-              <source media="(min-width: 960px)" srcset="img/logo-pink-white-desktop.svg">
-              <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
-              <img class="logo__img" src="img/logo-pink-white-mobile.svg" alt="PINK">
-            </picture>
+            <svg class="logo__icon logo__icon--mobile" width="75" height="22" >
+              <use xlink:href="#logo-pink-white-mobile"></use>
+            </svg>
+            <svg class="logo__icon logo__icon--tablet" width="147" height="40">
+              <use xlink:href="#logo-pink-white-tablet"></use>
+            </svg>
+            <svg class="logo__icon logo__icon--desktop" width="147" height="40">
+              <use xlink:href="#logo-pink-white-desktop"></use>
+            </svg>
           </a>
 
           <button class="main-header__button main-header__button--open" type="button">
@@ -324,7 +331,14 @@
 
     <footer class="page-footer page-footer--index">
 
-      <a class="page-footer__logo logo__img"><img src="img/logo-pink-blue-mobile.svg" alt="PINK" width="147" height="40"></a>
+      <a class="page-footer__logo">
+        <svg class="page-footer__img page-footer__img--small" width="144" height="40" >
+          <use xlink:href="#logo-pink-blue-mobile"></use>
+        </svg>
+        <svg class="page-footer__img page-footer__img--big" width="144" height="40">
+          <use xlink:href="#logo-pink-blue-desktop"></use>
+        </svg>
+      </a>
 
       <ul class="social">
         <li class="social__item">

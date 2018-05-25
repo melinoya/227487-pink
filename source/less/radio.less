@@ -25,12 +25,12 @@
   border-radius: 50%;
 }
 
-.radio:hover .radio--indicator {
+.radio:hover .radio--indicator,
+.radio input[type="radio"]:focus + .radio--indicator {
   border-color: #283645;
 }
 
-.radio:active .radio--indicator,
-.radio input[type="radio"]:focus + .radio--indicator {
+.radio:active .radio--indicator {
   border-color: #d22856;
 }
 
@@ -52,10 +52,6 @@
 
   background-color: #d22856;
   border-radius: 50%;
-}
-
-.radio input[type="radio"]:checked + .radio--indicator {
-  border-color: #d22856;
 }
 
 @media (min-width: @tablet) {
