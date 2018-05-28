@@ -35,6 +35,18 @@
 
   border: none;
   background-color: transparent;
+
+  fill: #ffffff;
+
+  &:hover,
+  &:focus {
+    fill: #d22856;
+  }
+
+  &:active {
+    fill: #d22856;
+    opacity: 0.3;
+  }
 }
 
 .main-header__button--open {
@@ -47,16 +59,6 @@
   width: 24px;
   height: 23px;
   margin-top: -15px;
-
-  &:hover path,
-  &:focus path {
-    fill: #d22856;
-  }
-
-  &:active path {
-    fill: #d22856;
-    opacity: 0.3;
-  }
 }
 
 .main-header__button--nav-hidden {
