@@ -53,7 +53,6 @@
   display: block;
   width: 320px;
   margin: 0 auto;
-  // margin-bottom: 40px;
   padding: 0 30px;
   padding-top: 87px;
 
@@ -61,6 +60,8 @@
 }
 
 .features__item {
+  position: relative;
+
   display: flex;
   flex-direction: column;
   margin-bottom: 33px;
@@ -70,19 +71,27 @@
   display: none;
 }
 
-.features__image--third {
-  display: block;
-  width: 157px;
-  height: 277px;
-  margin: 0 auto;
-  margin-top: 40px;
-  order: 2;
+.features__item--third {
+  padding-bottom: 317px;
 
-  background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
 
-  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/iphone-screen-mobile@2x.png");
-    background-size: cover;
+    width: 157px;
+    height: 320px;
+    margin-left: -78px;
+
+    background: url("../img/iphone-screen-mobile@1x.png") no-repeat;
+    background-size: 100%;
+    background-position: center 43px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/iphone-screen-mobile@2x.png");
+      background-size: 100%;
+    }
   }
 }
 
@@ -152,19 +161,24 @@
     margin-bottom: 34px;
   }
 
-  .features__image--third {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
+  .features__item--third {
+    padding-bottom: 0;
 
-    width: 268px;
-    height: 480px;
+    &::after {
+      left: -308px;
+      bottom: -105px;
 
-    background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
+      margin-left: 0;
+      width: 268px;
+      height: 544px;
 
-    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-      background-image: url("../img/iphone-screen-3-tablet@2x.png");
-      background-size: cover;
+      background: url("../img/iphone-screen-3-tablet@1x.png") no-repeat;
+      background-size: 100%;
+
+      @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+        background-image: url("../img/iphone-screen-3-tablet@2x.png");
+        background-size: 100%;
+      }
     }
   }
 }
@@ -206,57 +220,67 @@
 
     flex-shrink: 0;
     width: 292px;
+    padding-top: 360px;
     box-sizing: border-box;
     margin: 0;
 
     text-align: center;
   }
 
-  .features__image {
-    position: relative;
+  .features__item--first::after {
+    content: "";
+    position: absolute;
+    top: -37px;
+    left: 0;
 
-    display: block;
+    height: 379px;
     width: 294px;
-    height: 302px;
-    margin: 0 auto;
-    margin-bottom: 56px;
 
-    background-size: cover;
-    background-position: center;
-  }
-
-  .features__image--first {
     background: url("../img/iphone-screen-1-desktop@1x.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-screen-1-desktop@2x.png");
-      background-size: cover;
+      background-size: 100%;
       background-position: center;
     }
   }
 
-  .features__image--second {
+  .features__item--second::after {
+    content: "";
+    position: absolute;
+    top: -37px;
+    left: 0;
+
+    height: 379px;
+    width: 294px;
+
     background: url("../img/iphone-screen-2-desktop@1x.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-screen-2-desktop@2x.png");
-      background-size: cover;
+      background-size: 100%;
       background-position: center;
     }
   }
 
-  .features__image--third {
-    position: relative;
-    left: auto;
-    top: auto;
+  .features__item--third::after {
+    top: -37px;
+    left: 0;
 
-    order: 0;
+    height: 379px;
+    width: 294px;
 
     background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/iphone-screen-3-desktop@2x.png");
-      background-size: cover;
+      background-size: 100%;
       background-position: center;
     }
   }
